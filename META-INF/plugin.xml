@@ -1,0 +1,51 @@
+<idea-plugin version="2">
+    <id>com.konifar.sample.hello_world</id>
+    <name>Hello World Sample</name>
+    <version>0.0.1</version>
+    <vendor email="yahpeycoy0403@gmail.com"
+            url="https://github.com/konifar/android-studio-plugin-hello-world">
+        android-studio-plugin-hello-world
+    </vendor>
+
+    <description><![CDATA[
+      This is very simple Android Studio Plugin. This plugin shows only Hello World Notification.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      First Released.
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="HelloWorldAction"
+                class="com.konifar.sample.hello_world.HelloWorldAction"
+                text="Show hello world"
+                description="Show hello world notification."
+                icon="/ic_cat.png">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
